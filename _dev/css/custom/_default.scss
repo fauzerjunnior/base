@@ -1,0 +1,148 @@
+.valign-wrapper {
+  display: flex;
+  align-items: center;
+
+  .valign {
+    display: block;
+  }
+}
+
+.text-align {
+	&.center {
+		text-align: center;
+	}
+	&.justify {
+		text-align: justify;
+	}
+	&.right {
+		text-align: right;
+	}
+}
+
+/** CSS Personalizado
+
+/* === Página HOME ===*/ 
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next, 
+.swiper-button-next, .swiper-container-rtl .swiper-button-previous {
+	background-size: 40px!important;
+}
+
+/* === Mobile === */
+
+@media (max-width: 500px) {
+	.swiper-container {
+	    min-height: 640px;
+	    height: 640px;
+		.swiper-slide {
+		    padding: 110px 20px!important;
+		}
+		h1.slider-title {    
+		    padding: 10px 20px 0px 20px;
+			font-size: 55px;
+		}
+	}
+	.crazy-border {
+	    display: none;
+	}
+	.mobile-menu-wrap {
+	    margin-top: 160px;
+        padding: 15px 15px 100% 15px;
+		nav { 
+		    border-bottom: none;
+		}
+	}	
+	.h2-section-title {
+	    padding: 15px;
+	}
+	.filters li {
+	    color: #010000;
+	    background: #d8d8d8;
+	    margin: 0px 15px 15px 15px;
+    	padding: 10px 100px;
+	}
+	@keyframes anim-filter {
+	  100% {
+	    color: #fff;
+	  } 
+	}
+	.footer-day {
+	    font-weight: 700;
+	    font-size: 15px;
+	    margin-bottom: -30px; 
+	    margin-top: 31px;
+	}
+	.clrs {
+	    left: 100px;
+	}
+	.clcents {
+	    right: 100px;
+	}
+	.contentoffers {
+	    background: #00000000;
+	    box-shadow: 0px 3px 18px #0000;
+	}
+	.pag_card {
+	    padding: 13px 12px;
+	    background: #fff;
+	    border-radius: 3px;
+	    margin-bottom: 10px;
+	}
+	.func_hour {
+	    margin-top: 40px;
+	}
+}
+
+/* === Página SOBRE ===*/ 
+
+h1.slider-title {
+    margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+	h2.h2_cap {
+	    padding: 70px 25px;
+	}
+}
+
+/* === Página RODIZIO ===*/ 
+
+h1.slider-title {
+    margin-top: 250px;
+    text-align: center;
+    padding: 0px 270px;
+}
+
+@media (max-width: 500px) {
+	.p_content {
+	    padding: 0px;
+	}
+	.div2 {
+		display: none;
+	}
+	.page .swiper-container {
+	    min-height: 400px!important;
+	}
+	h1.slider-title {
+	    margin-top: 80px!important;	
+	}
+}
+
+/* === Página FALE CONOSCO === */
+
+.swiper-container.sfc { 
+    background-position: top;
+	background-size: cover;
+}
+
+@media (max-width: 500px) {
+	.swiper-container.sfc { 
+	    background-position: right top!important;
+	}
+	.sfc h1.slider-title {
+	    margin-top: 100px !important;
+	}
+	.mapfc {
+	    width: 100%;
+	}
+}
